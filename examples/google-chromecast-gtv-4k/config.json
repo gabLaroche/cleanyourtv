@@ -1,0 +1,14 @@
+{
+  "dock_apps": [
+    "com.google.android.youtube.tv",
+    "com.netflix.ninja",
+    "com.amazon.amazonvideo.livingroom",
+    "ca.bellmedia.cravetv"
+  ],
+  "live_tv_package": "",
+  "stock_home_redirect": "com.google.android.apps.tv.launcherx",
+  "app_keys": [
+    "190:com.google.android.youtube.tv",
+    "191:com.netflix.ninja"
+  ]
+}

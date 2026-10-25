@@ -11,9 +11,23 @@
 # - com.google.android.tungsten.setupwraith: it holds the Cast receiver's device credentials (debloat.txt, quirks).
 # - com.google.android.apps.tv.dreamx and com.google.android.backdrop: without the new launcher's Clock
 #   screensaver, disabling them leaves the screensaver pointing at nothing.
-# Move on to debloat.txt when you install the launcher and accept losing phone casting after a reboot.
+# Move on to debloat.txt when you install the launcher and accept losing phone casting after a reboot, or keep
+# this list and take Home with the redirect instead (third unit below, config.json in this folder).
 #
 # Lived with on 2026-10-22: stock home, phone casting (YouTube), Play Store and Assistant all worked.
+#
+# Third unit: Canada, same build, 2026-10-25, reached over Tailscale. This list as is, plus seven streaming apps
+# the household does not use (not listed); after a reboot the disabled list was unchanged.
+# - The launcher on top of it with launcherx and setupwraith left enabled: the keys in config.json, set in
+#   config.xml, and `STOCK_LAUNCHER=none HOME_KEY_SERVICE=1 launcher/build-and-install.sh`. The script stops at
+#   its Home check, as expected while launcherx is Home; HomeKeyService was then enabled the way the script does
+#   it. Home pressed in YouTube landed on the new launcher, and after a reboot the TV came up on it (HomeKeyService's
+#   boot check, #1116). On the real remote Home, YouTube (190), Netflix (191), the mic, holding Home (quick
+#   settings) and holding Volume Up (kept ramping) all worked. The Cast receiver was running; casting from a phone
+#   was not tried after the launcher went in.
+# - Private DNS (dns.adguard-dns.com) broke every name lookup while the Tailscale app's VPN was up: `ping`
+#   answered "unknown host", while 8.8.8.8 and port 853 on the resolver answered. Reverted; not tried with
+#   Tailscale off.
 
 # Telemetry, feedback and ads
 com.google.android.feedback
