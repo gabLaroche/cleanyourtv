@@ -1,0 +1,8 @@
+# batch 3: streaming apps the household does not use
+com.disney.disneyplus
+com.apple.atve.androidtv.appletv
+tv.toutv.androidtv
+ca.cbc.android.cbctv
+com.cbs.ca
+com.discovery.discoveryplus.androidtv
+com.crunchyroll.crunchyroid

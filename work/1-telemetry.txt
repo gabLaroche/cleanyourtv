@@ -1,0 +1,9 @@
+# Chromecast with Google TV 4K (sabrina), Google TV 14, UTTC.250917.004 - batch 1: telemetry, feedback and ads
+com.google.android.feedback
+com.android.tv.feedbackconsent
+com.google.android.tv.remotecontrol.logging
+com.google.android.apps.tv.netoscope
+com.google.android.federatedcompute
+com.google.android.ondevicepersonalization.services
+com.google.android.adservices.api
+com.google.android.ext.adservices.api

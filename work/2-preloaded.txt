@@ -1,0 +1,5 @@
+# batch 2: preloaded apps (Assistant and YouTube Music kept by choice)
+com.google.android.play.games
+com.google.android.videos
+com.android.printspooler
+com.google.android.marvin.talkback
