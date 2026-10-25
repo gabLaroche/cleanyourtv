@@ -34,8 +34,25 @@ Installed `com.gathin.tvhome` with launcherx and setupwraith left enabled, so ca
 On the real remote, Home, YouTube, Netflix, mic, holding Home and holding Volume Up all work. After a reboot the
 TV came up on the new home.
 
-To change the dock order: edit `dock_apps` in config.xml and run the same install command again (it re-enables
-HomeKeyService only if the script gets that far, so enable it again by hand as before).
+### Changing the dock and grid from the remote
+
+No computer needed. On the home screen, hold OK on the **Settings** button (top right); a plain click opens the
+TV's settings instead. The menu has:
+
+- **Edit dock**: choose a dock place and press OK, then choose the app to put there and press OK. Back finishes.
+- **Reorder apps**: OK picks a tile up, the arrows move it, Back puts it down, Back again finishes.
+- **Launcher settings**: **Apps per row** (4, 5, 6 or 7; the dock always has that many places), **Rows below
+  dock**, **Dock band opacity**, **Wallpaper**, **Animations**, and **Follow theme**, which resets all of these.
+
+These choices are kept on the TV; Follow theme or pushing a theme clears them. Hiding an app from the grid is not
+possible from the remote in this build: holding OK on a tile opens the app's info page. Disable or uninstall the
+app in Settings > Apps instead, or rebuild with `tile_menu` and `app_library` on, which adds Move and Remove from
+Home to that hold-OK menu.
+
+### Changing the defaults from a computer
+
+Edit `dock_apps` in config.xml and run the same install command again. The script always stops at its Home check
+on this TV, so enable HomeKeyService by hand afterwards, as above; Android also switches it off on every reinstall.
 To undo: uninstall Clean Your TV in Settings > Apps; the Google home takes over again.
 
 ## Notes
